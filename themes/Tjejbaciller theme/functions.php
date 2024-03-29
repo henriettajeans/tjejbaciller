@@ -66,9 +66,6 @@ add_theme_support(
     )
 );
 
-
-
-
 function theme_register_widget_areas()
 {
     $widget_areas = array(
@@ -90,7 +87,7 @@ function theme_register_widget_areas()
             'before_title' => '<h2 class="widget-title">',
             'after_title' => '</h2>',
         ),
-        // Lägg till fler widget-områden här om du behöver.
+        // Lägg till fler widget-områden här
     );
 
     foreach ($widget_areas as $widget_area) {
@@ -181,50 +178,93 @@ function cart_page_notice()
     }
 }
 
-function post_type_stores()
+function post_type_services()
 {
     $supports = array(
         'title',
         'editor',
-        'author',
         'thumbnail',
         'excerpt',
         'custom-fields',
-        'comments',
         'revisions',
         'post-formats',
     );
 
     $labels = array(
-        'name' => _x('Butiker', 'plural'),
-        'singular_name' => _x('Butik', 'singular'),
-        'menu_name' => _x('Butiker', 'admin menu'),
-        'name_admin_bar' => _x('Butiker', 'admin bar'),
-        'add_new' => _x('Lägg till', 'add new'),
-        'add_new_item' => __('Lägg en ny butik'),
-        'new_item' => __('Ny butik'),
-        'edit_item' => __('Redigera butik'),
-        'view_item' => __('Visa butik'),
-        'all_items' => __('Alla butiker'),
-        'search_items' => __('Sök butik'),
-        'not_found' => __('Inget hittades.'),
+        'name' => _x('Tjänster', 'plural'),
+        'singular_name' => _x('Tjänst', 'singular'),
+        'menu_name' => _x('Tjänster', 'admin menu'),
+        'name_admin_bar' => _x('Tjänster', 'admin bar'),
+        'add_new' => _x('Lägg till en tjänst', 'add new'),
+        'add_new_item' => __('Lägg en ny tjänst'),
+        'new_item' => __('Ny tjänst'),
+        'edit_item' => __('Redigera tjänsten'),
+        'view_item' => __('Visa tjänst'),
+        'all_items' => __('Alla tjänster'),
+        'search_items' => __('Sök bland tjänster'),
+        'not_found' => __('Ingen tjänst hittades'),
     );
 
     $args = array(
-        'supports' => $supports, // Vilka "content" delar som ska användas i post-typen
-        'labels' => $labels, // Namn och text som syns i UI:t
-        'public' => true, // Om alla användare ska kunna skapa denna post-types
-        'query_var' => true, // Skapa en query-variabel för post-typen
-        'rewrite' => array('slug' => 'stores'), // Hur man når post-typen (t.ex. som inläggsida) http://localhost/news/
-        'has_archive' => false, // Ska post-typen ha arkiv-sida? Likt inlägg
-        'hierarchical' => true, // Ska de behandlas som sidor (true) eller inlägg (false)?
+        'supports' => $supports,
+        'labels' => $labels,
+        'public' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'services'),
+        'has_archive' => false,
+        'hierarchical' => true,
+        // TODO: change icon to proper one
         'menu_icon' => 'dashicons-store'
     );
 
-    register_post_type('stores', $args);
+    register_post_type('services', $args);
 }
 
-add_action('init', 'post_type_stores');
+add_action('init', 'post_type_services');
+
+function post_type_projects()
+{
+    $supports = array(
+        'title',
+        'editor',
+        'thumbnail',
+        'excerpt',
+        'custom-fields',
+        'revisions',
+        'post-formats',
+    );
+
+    $labels = array(
+        'name' => _x('Projekt', 'plural'),
+        'singular_name' => _x('Projekt', 'singular'),
+        'menu_name' => _x('Projekt', 'admin menu'),
+        'name_admin_bar' => _x('Projekt', 'admin bar'),
+        'add_new' => _x('Lägg till nytt projekt', 'add new'),
+        'add_new_item' => __('Lägg till ett nytt projekt'),
+        'new_item' => __('Nytt projekt'),
+        'edit_item' => __('Redigera projekt'),
+        'view_item' => __('Visa projekt'),
+        'all_items' => __('Alla projekt'),
+        'search_items' => __('Sök bland projekt'),
+        'not_found' => __('Inget projekt hittades'),
+    );
+
+    $args = array(
+        'supports' => $supports,
+        'labels' => $labels,
+        'public' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'projects'),
+        'has_archive' => false,
+        'hierarchical' => true,
+        // TODO: change icon to proper one
+        'menu_icon' => 'dashicons-store'
+    );
+
+    register_post_type('projects', $args);
+}
+
+add_action('init', 'post_type_projects');
 
 add_action('init', 'remove_storefront_header_search');
 
