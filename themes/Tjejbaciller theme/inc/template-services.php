@@ -13,18 +13,25 @@ get_header();
     )); ?>
     <h1><?php the_title()  ?></h1>
     <?php
-    while (have_posts()) : the_post(); ?>
-        <article class="store-single">
-            <h2><?php the_title(); ?></h2>
-            <div class="store-meta">
-                <p><?php the_content(); ?></p>
-            </div>
-            <div class="store-image">
-                <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="">
-            </div>
-        </article>
-    <?php
-    endwhile; ?>
+    while (have_posts()) : the_post();
+    ?>
+
+    <article>
+        <?php echo the_title();
+
+            $gallery_images = get_field('service_gallery');
+
+            // Check if there are images in the gallery
+            if ($gallery_images) : ?>
+        <div class="gallery">
+            <?php foreach ($gallery_images as $image_id) : ?>
+            <?php $image = wp_get_attachment_image_src($image_id, 'thumbnail'); ?>
+            <img src="<?php echo esc_url($image[0]); ?>" alt="<?php echo esc_attr(get_the_title($image_id)); ?>" />
+            <?php endforeach; ?>
+        </div>
+        <?php
+            endif;
+        endwhile; ?>
 
 
 </section>

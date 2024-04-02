@@ -11,21 +11,47 @@ get_header();
     query_posts(array(
         'post_type' => 'projects'
     )); ?>
-    <h1><?php the_title()  ?></h1>
-    <?php
-    while (have_posts()) : the_post(); ?>
-        <article class="store-single">
-            <h2><?php the_title(); ?></h2>
-            <div class="store-meta">
-                <p><?php the_content(); ?></p>
-            </div>
-            <div class="store-image">
-                <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="">
-            </div>
-        </article>
-    <?php
-    endwhile; ?>
+    <section>
+        <?php
+        while (have_posts()) : the_post();
 
+            $name = get_field('project_title');
+            $description = get_field('project_description');
+            $image = get_field('project_thumbnail');
+            $gallery = get_sub_field('projects')
+
+        ?>
+
+
+            <section class="team-section__container">
+                <article class="team-section__container__text">
+                    <?php if ($name) : ?>
+                        <h4>
+                            <?php echo $name; ?>
+                        </h4>
+                    <?php endif; ?>
+                    <?php if ($description) : ?>
+                        <p>
+                            <?php echo $description; ?>
+                        <p>
+                        <?php endif; ?>
+                        <article>
+                            <?php if (have_rows('projects')) :
+                                while (have_rows('projects')) : the_row();
+                            ?>
+                                    <a href="<?php echo $gallery ?>"></a>
+
+                            <?php endwhile;
+                            endif; ?>
+                        </article>
+
+                </article>
+
+                <img class="team-section__container__img" src="<?php echo $image; ?>">
+            </section>
+    </section>
+<?php
+        endwhile; ?>
 
 </section>
 <?php
