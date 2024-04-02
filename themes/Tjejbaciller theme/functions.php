@@ -182,6 +182,7 @@ function cart_page_notice()
 function post_type_services()
 {
     $supports = array(
+        'title',
         'excerpt',
         'custom-fields',
         'revisions',
@@ -222,6 +223,7 @@ add_action('init', 'post_type_services');
 function post_type_projects()
 {
     $supports = array(
+        'title',
         'excerpt',
         'custom-fields',
         'revisions',
