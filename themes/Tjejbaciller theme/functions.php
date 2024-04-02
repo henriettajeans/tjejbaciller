@@ -182,13 +182,9 @@ function cart_page_notice()
 function post_type_services()
 {
     $supports = array(
-        'title',
-        'editor',
-        'thumbnail',
         'excerpt',
         'custom-fields',
         'revisions',
-        'post-formats',
     );
 
     $labels = array(
@@ -226,13 +222,9 @@ add_action('init', 'post_type_services');
 function post_type_projects()
 {
     $supports = array(
-        'title',
-        'editor',
-        'thumbnail',
         'excerpt',
         'custom-fields',
         'revisions',
-        'post-formats',
     );
 
     $labels = array(
