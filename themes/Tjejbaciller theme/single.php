@@ -39,7 +39,8 @@ the_post();
             <?php get_sidebar('orientation'); ?>
 
         </div>
-    </article> -->
+    </article>
 </section>
+
 <?php
 get_footer();

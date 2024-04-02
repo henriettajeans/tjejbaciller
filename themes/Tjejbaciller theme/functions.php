@@ -62,7 +62,8 @@ $bg_defaults = array(
 add_theme_support(
     'custom-background',
     array(
-        'default-color' => 'd1e4dd',  $bg_defaults
+        'default-color' => 'd1e4dd',
+        'default-image' => '',  $bg_defaults
     )
 );
 
