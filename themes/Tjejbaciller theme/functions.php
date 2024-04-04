@@ -212,7 +212,7 @@ function post_type_services()
         'has_archive' => false,
         'hierarchical' => true,
         // TODO: change icon to proper one
-        'menu_icon' => 'dashicons-store'
+        'menu_icon' => 'dashicons-art'
     );
 
     register_post_type('services', $args);
@@ -253,7 +253,7 @@ function post_type_projects()
         'has_archive' => false,
         'hierarchical' => true,
         // TODO: change icon to proper one
-        'menu_icon' => 'dashicons-store'
+        'menu_icon' => 'dashicons-portfolio'
     );
 
     register_post_type('projects', $args);
