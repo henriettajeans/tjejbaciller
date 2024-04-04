@@ -1,7 +1,3 @@
-<?php wp_footer(); ?>
-
-</div>
-</div>
 </main>
 
 <?php do_action('storefront_before_footer'); ?>
@@ -25,7 +21,7 @@
 dynamic_sidebar('footer-widget-area');
 do_action('storefront_after_footer'); ?>
 
-</div><!-- #page -->
+</div>
 
 <?php wp_footer(); ?>
 

@@ -27,6 +27,4 @@
             </section>
 
     </header>
-    <div id="container">
-
-        <main id="content" role="main">
+    <main id="content" role="main">

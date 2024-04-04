@@ -1,0 +1,19 @@
+body {
+  scroll-behavior: smooth;
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-transform: none;
+  text-decoration: none;
+}
+body main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+body main p {
+  color: rgb(106, 80, 123);
+}/*# sourceMappingURL=style.css.map */
