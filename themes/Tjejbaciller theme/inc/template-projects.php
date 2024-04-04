@@ -7,6 +7,11 @@ get_header();
 
 <!-- TODO: general page class name -->
 <section class="projects">
+    <h2>
+        <?php
+        the_title();
+        ?>
+    </h2>
     <?php
     query_posts(array(
         'post_type' => 'projects'
@@ -18,7 +23,6 @@ get_header();
             $name = get_field('project_title');
             $description = get_field('project_description');
             $image = get_field('project_thumbnail');
-            $gallery = get_sub_field('projects')
 
         ?>
 
@@ -27,7 +31,9 @@ get_header();
                 <article class="team-section__container__text">
                     <?php if ($name) : ?>
                         <h4>
-                            <?php echo $name; ?>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php echo $name; ?>
+                            </a>
                         </h4>
                     <?php endif; ?>
                     <?php if ($description) : ?>
@@ -35,16 +41,6 @@ get_header();
                             <?php echo $description; ?>
                         <p>
                         <?php endif; ?>
-                        <article>
-                            <?php if (have_rows('projects')) :
-                                while (have_rows('projects')) : the_row();
-                            ?>
-                                    <a href="<?php echo $gallery ?>"></a>
-
-                            <?php endwhile;
-                            endif; ?>
-                        </article>
-
                 </article>
 
                 <img class="team-section__container__img" src="<?php echo $image; ?>">
