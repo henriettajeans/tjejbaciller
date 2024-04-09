@@ -71,18 +71,27 @@ function theme_register_widget_areas()
 {
     $widget_areas = array(
         array(
-            'name' => 'Footer Widget Area',
+            'name' => 'Footer Widget 1',
             'id' => 'footer-widget-area',
-            'description' => 'This is the footer widget area.',
-            'before_widget' => '<div class="sidebar">',
+            'description' => 'This is one footer widget area.',
+            'before_widget' => '<div class="footer">',
             'after_widget' => '</div>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ),
+        array(
+            'name' => 'Footer Widget 2',
+            'id' => 'footer-widget-area',
+            'description' => 'This is one footer widget area.',
+            'before_widget' => '<div class="footer">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
         ),
         array(
             'name' => 'Orientering',
             'id' => 'orientation',
-            'description' => 'Dethär är sidomenyn för kategori, författare och arkivinsidan.',
+            'description' => 'Använd denhär widgeten',
             'before_widget' => '<div class="widget">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',
