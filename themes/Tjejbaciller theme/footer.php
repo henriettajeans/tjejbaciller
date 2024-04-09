@@ -17,7 +17,7 @@
     </div><!-- .col-full -->
 </footer><!-- #colophon -->
 
-<section>
+<section class="footer-box">
     <?php dynamic_sidebar('footer-widget-area'); ?>
 </section>
 <?php
