@@ -18,9 +18,9 @@
                 <h1>
                     <?php bloginfo("name"); ?>
                 </h1>
-                <div class="bar-wrapper_search">
+                <!-- <div class="bar-wrapper_search">
                     <?php get_search_form(); ?>
-                </div>
+                </div> -->
             </section>
             <section class="nav-wrapper">
                 <?php wp_nav_menu(array("theme_location" => "primary_menu")); ?>

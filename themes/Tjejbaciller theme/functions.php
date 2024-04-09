@@ -2,7 +2,7 @@
 register_nav_menus(array(
     "primary_menu" => array(
         "theme_location" => "Huvudmeny",
-        "menu_class" => "my-primary-menu",
+        "menu_class" => "navbar",
     ),
     "sub_menu" => "Undermeny",
     "footer_menu" => "Footermeny"
@@ -72,7 +72,7 @@ function theme_register_widget_areas()
     $widget_areas = array(
         array(
             'name' => 'Footer Widget 1',
-            'id' => 'footer-widget-area',
+            'id' => 'footer-widget-area1',
             'description' => 'This is one footer widget area.',
             'before_widget' => '<div class="footer">',
             'after_widget' => '</div>',
@@ -81,6 +81,15 @@ function theme_register_widget_areas()
         ),
         array(
             'name' => 'Footer Widget 2',
+            'id' => 'footer-widget-area2',
+            'description' => 'This is one footer widget area.',
+            'before_widget' => '<div class="footer">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ),
+        array(
+            'name' => 'Footer Widget 3',
             'id' => 'footer-widget-area',
             'description' => 'This is one footer widget area.',
             'before_widget' => '<div class="footer">',
@@ -91,8 +100,8 @@ function theme_register_widget_areas()
         array(
             'name' => 'Orientering',
             'id' => 'orientation',
-            'description' => 'Använd denhär widgeten',
-            'before_widget' => '<div class="widget">',
+            'description' => 'Använd denhär widgeten som en sidebar till exempel',
+            'before_widget' => '<div class="sidebar">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',
             'after_title' => '</h2>',

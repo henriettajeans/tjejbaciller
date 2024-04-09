@@ -17,8 +17,10 @@
     </div><!-- .col-full -->
 </footer><!-- #colophon -->
 
+<section>
+    <?php dynamic_sidebar('footer-widget-area'); ?>
+</section>
 <?php
-dynamic_sidebar('footer-widget-area');
 do_action('storefront_after_footer'); ?>
 
 </div>

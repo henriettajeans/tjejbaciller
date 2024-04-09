@@ -1,23 +1,25 @@
+/** @format */
 
-body{
-    scroll-behavior: smooth;
-    font-family: Trebuchet MS, Tahoma, sans-serif;
-    li{
-        
-        list-style: none;
-    }
-    a{
-        text-transform: none;
-        text-decoration: none;
-    }
-    main{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+@import "navbar.scss";
+@import "footer.scss";
 
-        p{
-            
-            color:rgb(106, 80, 123);
-        }
+body {
+  scroll-behavior: smooth;
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+  li {
+    list-style: none;
+  }
+  a {
+    text-transform: none;
+    text-decoration: none;
+  }
+  main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: rgb(106, 80, 123);
     }
+  }
 }
