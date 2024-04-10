@@ -24,6 +24,9 @@
             </section>
             <section class="nav-wrapper">
                 <?php wp_nav_menu(array("theme_location" => "primary_menu")); ?>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </section>
 
     </header>

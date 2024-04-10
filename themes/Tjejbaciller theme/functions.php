@@ -2,7 +2,7 @@
 register_nav_menus(array(
     "primary_menu" => array(
         "theme_location" => "Huvudmeny",
-        "menu_class" => "navbar",
+        "menu_class" => "active",
     ),
     "sub_menu" => "Undermeny",
     "footer_menu" => "Footermeny"
@@ -286,3 +286,10 @@ function remove_storefront_header_search()
 
     remove_action('storefront_header', 'storefront_product_search', 40);
 }
+
+function custom_nav()
+{
+    wp_enqueue_script('custom-nav', get_template_directory_uri() . '/js/custom-nav.js', array(), '1.0', true);
+}
+
+add_action('wp_enqueue_scripts', 'custom_nav');
