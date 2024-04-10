@@ -287,9 +287,10 @@ function remove_storefront_header_search()
     remove_action('storefront_header', 'storefront_product_search', 40);
 }
 
-function custom_nav()
+function burger_menu()
 {
-    wp_enqueue_script('custom-nav', get_template_directory_uri() . '/js/custom-nav.js', array(), '1.0', true);
+
+    wp_enqueue_script('burger-menu', get_template_directory_uri() . '/scripts/burger-menu.js', array('jquery'));
 }
 
-add_action('wp_enqueue_scripts', 'custom_nav');
+add_action('wp_enqueue_scripts', 'burger_menu');

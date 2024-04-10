@@ -13,21 +13,16 @@
 <body>
     <header id="header" role="banner">
 
-        <div id="wrapper" class="hfeed">
-            <section class="bar-wrapper">
-                <h1>
-                    <?php bloginfo("name"); ?>
-                </h1>
-                <!-- <div class="bar-wrapper_search">
-                    <?php get_search_form(); ?>
-                </div> -->
-            </section>
-            <section class="nav-wrapper">
-                <?php wp_nav_menu(array("theme_location" => "primary_menu")); ?>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </section>
-
+        <div class="right quarter">
+            <a class="toggle-nav" href="#">&#9776;</a>
+        </div>
     </header>
+
+    <nav class="nav-wrapper">
+        <?php wp_nav_menu(array("theme_location" => "primary_menu")); ?>
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a> -->
+    </nav>
+
     <main id="content" role="main">

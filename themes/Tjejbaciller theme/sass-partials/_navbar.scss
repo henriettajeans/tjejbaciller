@@ -2,47 +2,73 @@
 
 @import "mixins";
 
+.toggle-nav {
+  display: inline-block;
+  float: right;
+  margin: 25px;
+  font-size: 2em;
+  transition: color linear 0.15s;
+}
+
+a.toggle-nav:link,
+a.toggle-nav:visited,
+a.toggle-nav:hover,
+a.toggle-nav:active {
+  text-decoration: none;
+  color: #b72d2d;
+}
+
 .nav-wrapper {
-  background-color: bisque;
   .menu-primary-menu-container {
     overflow: hidden;
     background-color: #dddbdb;
     position: relative;
     .menu {
-      display: none;
-      justify-content: right;
-      margin-right: 0;
-      @include desktop {
-        width: 100%;
-        height: 100%;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        li {
+      // display: none;
+      position: absolute;
+      overflow: auto;
+      top: 0px;
+      right: 0px;
+      z-index: 999;
+      padding-right: 15px;
+      background: #fff;
+
+      li {
+        float: none;
+        display: block;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        min-width: 200px;
+        background: #fff;
+        text-align: right;
+
+        &:after {
+          content: none;
+        }
+        a {
+          color: rgb(206, 138, 138);
+          padding: 14px 16px;
           text-decoration: none;
-          a {
-            color: rgb(206, 138, 138);
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
+          font-size: 17px;
+          display: block;
+          .icon {
+            background: rgb(210, 204, 208);
             display: block;
-            .icon {
-              background: rgb(210, 204, 208);
-              display: block;
-              position: absolute;
-              right: 0;
-              top: 0;
-            }
+            position: absolute;
+            right: 0;
+            top: 0;
           }
-          a:hover {
-            background-color: #ddd;
-            color: rgb(212, 78, 78);
-          }
+        }
+        &:hover {
+          background-color: #ddd;
+          color: rgb(212, 78, 78);
         }
       }
     }
   }
 }
+
 .woocommerce-MyAccount-navigation {
   background-color: bisque;
   ul {
