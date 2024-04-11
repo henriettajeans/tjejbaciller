@@ -11,7 +11,8 @@ body {
   margin: 0;
 
   header {
-    display: inline-block;
+    // display: block;
+    margin: 1em;
   }
 
   li {
@@ -23,12 +24,24 @@ body {
   }
   main {
     text-align: center;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-left: 2.5em;
-    width: 90%;
+    @include tablet {
+      margin-left: 4em;
+      margin-right: auto;
+      width: 90%;
+      .container__content {
+        justify-content: center;
+        width: 90vw;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+      }
+    }
+    position: relative;
     p {
       color: rgb(106, 80, 123);
+      margin: 2em;
     }
   }
   input,
@@ -37,7 +50,7 @@ body {
     padding: 0.4em;
   }
   img {
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 300px;
   }
 }
