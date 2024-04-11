@@ -17,6 +17,7 @@
 }
 .active-close {
   display: block;
+  // overflow-y: hidden;
 }
 
 a.toggle-nav:link,
@@ -42,9 +43,8 @@ a.toggle-nav:active {
       right: 0px;
       z-index: 999;
       padding-right: 15px;
-      margin-top: 3.4em;
       background: #a09090;
-
+      border-radius: 2em;
       li {
         float: none;
         display: block;
