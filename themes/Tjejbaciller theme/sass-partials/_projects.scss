@@ -1,0 +1,21 @@
+/** @format */
+@import "mixins";
+@import "variables";
+
+h2 {
+  color: rgb(185, 73, 122);
+}
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 2em;
+  max-width: 100%;
+  .projects-container {
+    padding: 3em;
+    border-style: groove;
+    border-color: rgba(78, 16, 71, 0.478);
+    max-width: 50%;
+  }
+}

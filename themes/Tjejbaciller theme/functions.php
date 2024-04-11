@@ -243,8 +243,10 @@ function post_type_projects()
 {
     $supports = array(
         'title',
-        'excerpt',
+
         'custom-fields',
+        'editor',
+        'excerpt',
         'revisions',
     );
 

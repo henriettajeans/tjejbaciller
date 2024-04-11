@@ -42,12 +42,11 @@ a.toggle-nav:active {
 }
 #site-header {
   height: auto;
-  width: 100vw;
-  margin: 0;
+  width: 97%;
   a {
     img {
       height: auto;
-      width: 95% !important;
+      width: 96%;
       margin-top: 0;
       display: inline-block;
     }
@@ -57,7 +56,7 @@ a.toggle-nav:active {
 .nav-wrapper {
   display: block;
   position: relative;
-  background: #d5cfcf;
+  background: #ebebebae;
   text-align: left;
 
   .menu-primary-menu-container {
@@ -69,8 +68,9 @@ a.toggle-nav:active {
       right: 0px;
       z-index: 999;
       padding-right: 15px;
-      background: #a09090;
+      background: #cfb6cce2;
       border-radius: 2em;
+      padding: 1em;
       li {
         float: none;
         display: block;
@@ -78,19 +78,19 @@ a.toggle-nav:active {
         top: 0px;
         right: 0px;
         min-width: 200px;
-        background: #fff;
+        // background: #be9fbb93;
         text-align: right;
 
         a {
-          color: rgb(206, 138, 138);
+          color: rgb(229, 234, 236);
           padding: 14px 16px;
           text-decoration: none;
           font-size: 1.4em;
           display: block;
         }
         &:hover {
-          background-color: #ddd;
-          color: rgb(212, 78, 78);
+          background-color: #dddddd20;
+          border-radius: 2em;
         }
       }
       &:after {
