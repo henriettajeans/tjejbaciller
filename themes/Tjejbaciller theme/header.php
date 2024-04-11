@@ -20,8 +20,8 @@
 
     <nav class="nav-wrapper">
         <div class="skip-link screen-reader-text">
-            <a href="#content" title="<?php esc_attr_e( 'Skip to content', 'compass' ); ?>">
-                <?php _e( 'Skip to content', 'twentyten' ); ?>
+            <a href="#content" title="<?php esc_attr_e('Skip to content', 'compass'); ?>">
+                <?php _e('Skip to content', 'twentyten'); ?>
             </a>
         </div>
         <?php wp_nav_menu(array("theme_location" => "primary_menu")); ?>
@@ -29,5 +29,6 @@
             <i class="fa fa-bars"></i>
         </a> -->
     </nav>
+    <div class="close-nav"></div>
 
     <main id="content" role="main">
