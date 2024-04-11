@@ -10,7 +10,6 @@
   transition: color linear 0.15s;
 }
 .close-nav {
-  background-color: #b72d2d;
   display: none;
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
@@ -20,7 +19,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  background-color: rgba(
+    202,
+    176,
+    191,
+    0.5
+  ); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
@@ -35,6 +39,19 @@ a.toggle-nav:hover,
 a.toggle-nav:active {
   text-decoration: none;
   color: #b72d2d;
+}
+#site-header {
+  height: auto;
+  width: 100vw;
+  margin: 0;
+  a {
+    img {
+      height: auto;
+      width: 95% !important;
+      margin-top: 0;
+      display: inline-block;
+    }
+  }
 }
 
 .nav-wrapper {
@@ -68,7 +85,7 @@ a.toggle-nav:active {
           color: rgb(206, 138, 138);
           padding: 14px 16px;
           text-decoration: none;
-          font-size: 17px;
+          font-size: 1.4em;
           display: block;
         }
         &:hover {
