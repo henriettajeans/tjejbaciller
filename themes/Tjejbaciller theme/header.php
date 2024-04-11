@@ -19,6 +19,11 @@
     </header>
 
     <nav class="nav-wrapper">
+        <div class="skip-link screen-reader-text">
+            <a href="#content" title="<?php esc_attr_e( 'Skip to content', 'compass' ); ?>">
+                <?php _e( 'Skip to content', 'twentyten' ); ?>
+            </a>
+        </div>
         <?php wp_nav_menu(array("theme_location" => "primary_menu")); ?>
         <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>

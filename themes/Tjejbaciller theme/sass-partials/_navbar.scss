@@ -19,19 +19,20 @@ a.toggle-nav:active {
 }
 
 .nav-wrapper {
+  display: block;
+  position: relative;
+  background: #d5cfcf;
+  text-align: left;
   .menu-primary-menu-container {
-    overflow: hidden;
-    background-color: #dddbdb;
-    position: relative;
     .menu {
-      // display: none;
+      display: none;
       position: absolute;
       overflow: auto;
       top: 0px;
       right: 0px;
       z-index: 999;
       padding-right: 15px;
-      background: #fff;
+      background: #a09090;
 
       li {
         float: none;
@@ -43,27 +44,20 @@ a.toggle-nav:active {
         background: #fff;
         text-align: right;
 
-        &:after {
-          content: none;
-        }
         a {
           color: rgb(206, 138, 138);
           padding: 14px 16px;
           text-decoration: none;
           font-size: 17px;
           display: block;
-          .icon {
-            background: rgb(210, 204, 208);
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
         }
         &:hover {
           background-color: #ddd;
           color: rgb(212, 78, 78);
         }
+      }
+      &:after {
+        content: none;
       }
     }
   }

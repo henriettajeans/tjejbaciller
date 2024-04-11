@@ -1,7 +1,7 @@
 <?php
 register_nav_menus(array(
     "primary_menu" => array(
-        "theme_location" => "Huvudmeny",
+        "theme_location" => "Primary",
         "menu_class" => "active",
     ),
     "sub_menu" => "Undermeny",
