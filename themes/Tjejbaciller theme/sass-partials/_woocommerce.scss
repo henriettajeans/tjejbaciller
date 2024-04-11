@@ -1,0 +1,13 @@
+/** @format */
+
+@import "mixins";
+@import "variables";
+
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+  border-radius: 2em !important;
+  padding: 2em !important;
+  border-top-color: pink;
+  background-color: rgb(255, 250, 251);
+}

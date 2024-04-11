@@ -19,17 +19,13 @@ $date = get_field('date');
             <?php echo $name; ?>
         </h5>
     <?php endif; ?>
-    <p> <?php echo $date ?> </p>
-    <?php if ($description) : ?>
-        <p>
-            <?php echo $description; ?>
-        <p>
-        <article class="post-content">
-            <?php
-            the_content();
-            ?>
-        </article>
-    <?php endif;
+    <img class="projects-container__img" src="<?php echo $image; ?>">
+    <article class="post-content">
+        <?php
+        the_content();
+        ?>
+    </article>
+    <?php
     if ($gallery_image) : ?>
         <div class="gallery">
             <?php foreach ($gallery_image as $image_id) : ?>

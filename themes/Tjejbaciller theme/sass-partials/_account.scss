@@ -1,0 +1,28 @@
+/** @format */
+/** @format */
+@import "mixins";
+@import "variables";
+
+.woocommerce-MyAccount-content {
+  margin-top: 4em;
+  h3 {
+    color: $title;
+  }
+  .woocommerce-address-fields__field-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
+    // @include tablet {
+    //   margin-left: 5em;
+    //   margin-right: 5em;
+    // }
+    .form-row {
+      padding: 1em !important;
+      width: 400px !important;
+    }
+  }
+}
