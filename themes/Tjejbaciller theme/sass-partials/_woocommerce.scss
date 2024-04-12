@@ -2,12 +2,20 @@
 
 @import "mixins";
 @import "variables";
+.woocommerce-MyAccount-content {
+  a {
+    color: rgb(224, 118, 181);
+    font-family: "Courier New", Courier, monospace;
+    text-transform: none;
+    text-decoration: none;
+  }
 
-.woocommerce-message,
-.woocommerce-info,
-.woocommerce-error {
-  border-radius: 2em !important;
-  padding: 2em !important;
-  border-top-color: pink;
-  background-color: rgb(255, 250, 251);
+  .woocommerce-message,
+  .woocommerce-info,
+  .woocommerce-error {
+    border-radius: 2em !important;
+    padding: 2em !important;
+    border-top-color: pink;
+    background-color: rgb(255, 250, 251);
+  }
 }

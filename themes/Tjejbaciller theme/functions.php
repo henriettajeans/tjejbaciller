@@ -77,8 +77,8 @@ function theme_register_widget_areas()
             'description' => 'This is one footer widget area.',
             'before_widget' => '<div class="footer">',
             'after_widget' => '</div>',
-            'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3>',
+            // 'before_title' => '<h3 class="widget-title">',
+            // 'after_title' => '</h3>',
         ),
         array(
             'name' => 'Footer Widget 2',
@@ -86,8 +86,8 @@ function theme_register_widget_areas()
             'description' => 'This is one footer widget area.',
             'before_widget' => '<div class="footer">',
             'after_widget' => '</div>',
-            'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3>',
+            // 'before_title' => '<h3 class="widget-title">',
+            // 'after_title' => '</h3>',
         ),
         array(
             'name' => 'Footer Widget 3',
@@ -95,8 +95,8 @@ function theme_register_widget_areas()
             'description' => 'This is one footer widget area.',
             'before_widget' => '<div class="footer">',
             'after_widget' => '</div>',
-            'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3>',
+            // 'before_title' => '<h3 class="widget-title">',
+            // 'after_title' => '</h3>',
         ),
         array(
             'name' => 'Orientering',

@@ -26,3 +26,16 @@
     }
   }
 }
+.woocommerce-EditAccountForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+  margin-left: 3em;
+  margin-right: 3em;
+  .woocommerce-form-row {
+    padding: 1em !important;
+    width: 400px !important;
+  }
+}

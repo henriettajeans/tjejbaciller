@@ -15,11 +15,19 @@
         ?>
 
     </div><!-- .col-full -->
+    <section class="footer-box">
+        <article>
+            <?php dynamic_sidebar('footer-widget-area'); ?>
+            <?php dynamic_sidebar(' footer-widget-area1'); ?>
+
+        </article>
+        <p class="">© Henrietta Jeansson 2024</p>
+    </section>
+
 </footer><!-- #colophon -->
 
-<section class="footer-box">
-    <?php dynamic_sidebar('footer-widget-area'); ?>
-</section>
+
+
 <?php
 do_action('storefront_after_footer'); ?>
 
