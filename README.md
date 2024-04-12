@@ -1,0 +1,35 @@
+Tjejbaciller Theme
+Contributors: Henrietta Jeansson
+Requires at least: WordPress 4.4
+Tested up to: WordPress 4.7
+Requires PHP: 5.6
+
+
+This is a website that I will use as a sellers shop, a portfolio for my art and possibly some web development. 
+
+Description
+
+A few notes about the sections above:
+
+"Contributors" is a comma separated list of wp.orgusernames
+"Stable tag" is not needed for themes
+"Tags" is not needed since these are parsed from the style.css file
+"Requires at least" is the lowest version that the plugin will work on
+"Tested up to" is the highest version that you've successfully used to test the theme. Note that it might work on higher versions... this is just the highest one you've verified.
+Frequently Asked Questions
+A question that someone might have?
+An answer to that question.
+
+Copyright
+Twenty Seventeen WordPress Theme, Copyright 2016 WordPress.org Twenty Seventeen is distributed under the terms of the GNU GPL
+
+Tjejbaciller theme bundles the following third-party resources:
+
+WP-SASS plugin
+ContactForm7 plugin
+Font Awesome icons, Copyright Dave Gandy License: SIL Open Font License, version 1.1. Source: http://fontawesome.io/
+
+Changelog
+1.0
+Released: April 12, 2024
+Initial release
