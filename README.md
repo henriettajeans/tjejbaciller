@@ -1,13 +1,13 @@
-Tjejbaciller Theme
-Contributors: Henrietta Jeansson
-Requires at least: WordPress 4.4
-Tested up to: WordPress 4.7
-Requires PHP: 5.6
+Tjejbaciller Theme <br>
+Contributors: Henrietta Jeansson<br>
+Requires at least: WordPress 4.4<br>
+Tested up to: WordPress 4.7<br>
+Requires PHP: 5.6<br>
 
 
-This is a website that I will use as a sellers shop, a portfolio for my art and possibly some web development. 
+This is a website that I will use as a sellers shop, a portfolio for my art and possibly some web development. <br>
 
-Description
+<h1>Description</h1><br>
 
 A few notes about the sections above:
 
