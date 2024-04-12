@@ -5,17 +5,46 @@
 .woocommerce-MyAccount-content {
   a {
     color: rgb(224, 118, 181);
-    font-family: "Courier New", Courier, monospace;
+    font-family: Georgia, "Times New Roman", Times, serif;
     text-transform: none;
     text-decoration: none;
   }
-
-  .woocommerce-message,
-  .woocommerce-info,
-  .woocommerce-error {
-    border-radius: 2em !important;
-    padding: 2em !important;
-    border-top-color: pink;
-    background-color: rgb(255, 250, 251);
+}
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+  border-radius: 2em !important;
+  padding: 2em !important;
+  border-top-color: pink !important;
+  background-color: rgb(255, 250, 251) !important;
+}
+.product-meta {
+  span {
+    padding: 1em;
+  }
+}
+.woocommerce-ordering {
+  select {
+    padding: 1.4em;
+    border-radius: 1em;
+    background-color: $inputbg;
+  }
+}
+.products {
+  .product {
+    border-style: hidden hidden dotted hidden;
+    border-color: pink;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    .button {
+      padding: 0.6em !important;
+    }
+  }
+}
+.wc-block-checkout__main {
+  .wc-block-components-form {
+    div {
+      padding: 0 !important;
+    }
   }
 }

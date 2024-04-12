@@ -27,6 +27,7 @@ body {
   a {
     text-transform: none;
     text-decoration: none;
+    color: palevioletred;
   }
   main {
     text-align: center;
@@ -57,6 +58,16 @@ body {
     background-color: $inputbg;
     border-style: dashed;
     border-color: rgb(153, 113, 193);
+  }
+  form {
+    div {
+      padding: 2em;
+    }
+    button {
+      border-style: none;
+      font-size: 1em;
+      color: palevioletred;
+    }
   }
 
   img {
