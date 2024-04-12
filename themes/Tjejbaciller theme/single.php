@@ -16,6 +16,7 @@ the_post();
     </h2>
     <article class="post-meta">
         <p>
+            <i class="fa-regular fa-calendar-days"></i>
             <?php the_date(); ?>
         </p>
         <p>

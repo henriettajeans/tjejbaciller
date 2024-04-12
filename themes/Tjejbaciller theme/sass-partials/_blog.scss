@@ -1,0 +1,26 @@
+/** @format */
+
+@import "variables.scss";
+@import "mixins.scss";
+
+.blogpost {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  .blogpost-flex {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      margin-right: 10%;
+      margin-left: 10%;
+      flex-direction: row;
+    }
+    #img-container {
+      img {
+        border-radius: 2em !important;
+        border-style: dashed;
+        border-color: palevioletred;
+      }
+    }
+  }
+}
