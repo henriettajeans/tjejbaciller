@@ -17,9 +17,8 @@ A few notes about the sections above:
 "Requires at least" is the lowest version that the plugin will work on
 "Tested up to" is the highest version that you've successfully used to test the theme. Note that it might work on higher versions... this is just the highest one you've verified.
 Frequently Asked Questions
-A question that someone might have?
-An answer to that question.
-
+Is this project fully done?
+No; this is the first finished draft of my website Tjejbaciller, and what I've spent my master thesis creating. Although it isn't done, that was the plan. I wanted to create something - not to be done, but something I will actually use and also will be able to keep developing as a side project.
 Copyright
 Twenty Seventeen WordPress Theme, Copyright 2016 WordPress.org Twenty Seventeen is distributed under the terms of the GNU GPL
 
