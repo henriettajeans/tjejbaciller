@@ -1,0 +1,124 @@
+/** @format */
+
+@import "mixins";
+@import "variables";
+
+.toggle-nav {
+  display: inline-block;
+  float: right;
+  margin: 25px;
+  font-size: 2em;
+  transition: color linear 0.15s;
+}
+.close-nav {
+  display: none;
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    202,
+    176,
+    191,
+    0.5
+  ); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.active-close {
+  display: block;
+  // overflow-y: hidden;
+}
+
+a.toggle-nav:link,
+a.toggle-nav:visited,
+a.toggle-nav:hover,
+a.toggle-nav:active {
+  text-decoration: none;
+  color: #b72d2d;
+}
+#site-header {
+  height: auto;
+  width: 97%;
+  a {
+    img {
+      height: auto;
+      width: 96%;
+      margin-top: 0;
+      display: inline-block;
+    }
+  }
+}
+
+.nav-wrapper {
+  display: block;
+  position: relative;
+  background: #ebebebae;
+  text-align: left;
+
+  .menu-primary-menu-container {
+    .menu {
+      display: none;
+      position: absolute;
+      overflow: auto;
+      top: 0px;
+      right: 0px;
+      z-index: 999;
+      padding-right: 15px;
+      background: #cfb6cce2;
+      border-radius: 2em;
+      padding: 1em;
+      li {
+        float: none;
+        display: block;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        min-width: 200px;
+        // background: #be9fbb93;
+        text-align: right;
+
+        a {
+          color: rgb(229, 234, 236);
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 1.4em;
+          display: block;
+        }
+        &:hover {
+          background-color: #dddddd20;
+          border-radius: 2em;
+        }
+      }
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+
+.woocommerce-MyAccount-navigation {
+  background-color: rgb(249, 235, 239);
+  margin-left: 3.2em;
+  margin-right: 3.2em;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    box-shadow: 0px 0px 40px 4px rgba(166, 164, 169, 0.468);
+    @include tablet {
+      width: 100%;
+      height: 80px;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      li {
+        color: rgb(238, 238, 238);
+      }
+    }
+  }
+}

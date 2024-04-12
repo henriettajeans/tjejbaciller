@@ -1,8 +1,8 @@
 <?php
 register_nav_menus(array(
     "primary_menu" => array(
-        "theme_location" => "Huvudmeny",
-        "menu_class" => "my-primary-menu",
+        "theme_location" => "Primary",
+        "menu_class" => "active",
     ),
     "sub_menu" => "Undermeny",
     "footer_menu" => "Footermeny"
@@ -33,6 +33,7 @@ add_theme_support(
         'chat',
     )
 );
+add_theme_support('custom-header');
 add_theme_support('responsive-embeds');
 add_theme_support('post-thumbnails');
 add_theme_support('widgets');
@@ -71,19 +72,37 @@ function theme_register_widget_areas()
 {
     $widget_areas = array(
         array(
-            'name' => 'Footer Widget Area',
-            'id' => 'footer-widget-area',
-            'description' => 'This is the footer widget area.',
-            'before_widget' => '<div class="sidebar">',
+            'name' => 'Footer Widget 1',
+            'id' => 'footer-widget-area1',
+            'description' => 'This is one footer widget area.',
+            'before_widget' => '<div class="footer">',
             'after_widget' => '</div>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>',
+            // 'before_title' => '<h3 class="widget-title">',
+            // 'after_title' => '</h3>',
+        ),
+        array(
+            'name' => 'Footer Widget 2',
+            'id' => 'footer-widget-area2',
+            'description' => 'This is one footer widget area.',
+            'before_widget' => '<div class="footer">',
+            'after_widget' => '</div>',
+            // 'before_title' => '<h3 class="widget-title">',
+            // 'after_title' => '</h3>',
+        ),
+        array(
+            'name' => 'Footer Widget 3',
+            'id' => 'footer-widget-area',
+            'description' => 'This is one footer widget area.',
+            'before_widget' => '<div class="footer">',
+            'after_widget' => '</div>',
+            // 'before_title' => '<h3 class="widget-title">',
+            // 'after_title' => '</h3>',
         ),
         array(
             'name' => 'Orientering',
             'id' => 'orientation',
-            'description' => 'Dethär är sidomenyn för kategori, författare och arkivinsidan.',
-            'before_widget' => '<div class="widget">',
+            'description' => 'Använd denhär widgeten som en sidebar till exempel',
+            'before_widget' => '<div class="sidebar">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',
             'after_title' => '</h2>',
@@ -212,7 +231,7 @@ function post_type_services()
         'has_archive' => false,
         'hierarchical' => true,
         // TODO: change icon to proper one
-        'menu_icon' => 'dashicons-store'
+        'menu_icon' => 'dashicons-art'
     );
 
     register_post_type('services', $args);
@@ -224,8 +243,10 @@ function post_type_projects()
 {
     $supports = array(
         'title',
-        'excerpt',
+
         'custom-fields',
+        'editor',
+        'excerpt',
         'revisions',
     );
 
@@ -253,7 +274,7 @@ function post_type_projects()
         'has_archive' => false,
         'hierarchical' => true,
         // TODO: change icon to proper one
-        'menu_icon' => 'dashicons-store'
+        'menu_icon' => 'dashicons-portfolio'
     );
 
     register_post_type('projects', $args);
@@ -268,3 +289,11 @@ function remove_storefront_header_search()
 
     remove_action('storefront_header', 'storefront_product_search', 40);
 }
+
+function burger_menu()
+{
+
+    wp_enqueue_script('burger-menu', get_template_directory_uri() . '/scripts/burger-menu.js', array('jquery'));
+}
+
+add_action('wp_enqueue_scripts', 'burger_menu');

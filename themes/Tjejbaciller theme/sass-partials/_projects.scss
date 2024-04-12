@@ -1,0 +1,40 @@
+/** @format */
+@import "mixins";
+@import "variables";
+
+h2 {
+  color: $title;
+}
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 2em;
+  max-width: 100%;
+
+  .projects-container {
+    padding: 3em;
+    border-style: groove;
+    border-color: rgba(78, 16, 71, 0.478);
+    max-width: 50%;
+    background-color: rgb(255, 249, 251);
+  }
+}
+.projects {
+  margin: 1em;
+  @include tablet {
+    margin: 4em;
+  }
+  img {
+    transition: transform 0.5s ease;
+    border-radius: 1em;
+
+    &:hover {
+      border-radius: 1.5em;
+      -webkit-transform: scale(1.5); /* or some other value */
+      transform: scale(1.5);
+      box-shadow: 10px 10px 100px 8px rgba(140, 150, 140, 0.639);
+    }
+  }
+}

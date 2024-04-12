@@ -1,7 +1,3 @@
-<?php wp_footer(); ?>
-
-</div>
-</div>
 </main>
 
 <?php do_action('storefront_before_footer'); ?>
@@ -19,13 +15,23 @@
         ?>
 
     </div><!-- .col-full -->
+    <section class="footer-box">
+        <article>
+            <?php dynamic_sidebar('footer-widget-area'); ?>
+            <?php dynamic_sidebar(' footer-widget-area1'); ?>
+
+        </article>
+        <p class="">© Henrietta Jeansson 2024</p>
+    </section>
+
 </footer><!-- #colophon -->
 
+
+
 <?php
-dynamic_sidebar('footer-widget-area');
 do_action('storefront_after_footer'); ?>
 
-</div><!-- #page -->
+</div>
 
 <?php wp_footer(); ?>
 

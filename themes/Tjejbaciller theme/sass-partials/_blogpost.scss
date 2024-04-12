@@ -1,0 +1,75 @@
+/** @format */
+
+@import "mixins";
+@import "variables";
+
+.post-wrapper {
+  padding: 3em;
+  text-align: left;
+  border-radius: 1em;
+  border-style: groove;
+  border-color: palevioletred;
+  img {
+    box-shadow: 0px 10px 10px 3px rgb(172, 172, 213);
+    border-radius: 0.5em;
+    width: 80% !important;
+    height: auto !important;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .post-title {
+    text-align: center;
+    margin-top: 2em;
+  }
+  .post-meta {
+    display: flex;
+    align-items: center;
+    p {
+      border-style: hidden hidden solid hidden;
+      border-color: rgb(110, 86, 114);
+    }
+  }
+  .post-content {
+  }
+  .comment-wrapper {
+    border-style: dashed hidden dashed hidden;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1.5em;
+    h3 {
+      color: palevioletred;
+      text-align: center;
+    }
+    textarea {
+      width: 80%;
+    }
+    img {
+      width: 50px !important;
+      height: auto;
+    }
+    .commentlist {
+      padding: 2em;
+      background-color: $inputbg;
+      border-radius: 1em;
+      li {
+        article {
+          display: flex !important;
+          flex-direction: column;
+          @include tablet {
+            flex-direction: row;
+          }
+          div {
+            padding: 1em;
+            p {
+              padding: 1em;
+              border-style: groove;
+            }
+          }
+          .reply {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
