@@ -38,10 +38,12 @@ This is a website that I will use as a sellers shop, a portfolio for my art and 
 
 <h3>Frequently Asked Questions</h3>
 <h4>Is this project fully done?</h4>
-No; this is the first finished draft of my website Tjejbaciller, and what I've spent my master thesis creating. Although it isn't done, that was the plan. I wanted to create something - not to be done, but something I will actually use and also will be able to keep developing as a side project.
-Copyright
+No; this is the first finished draft of my website Tjejbaciller, and what I've spent my master thesis creating. Although it isn't done, that was the plan. I wanted to create something - not to be done, but something I will actually use and also will be able to keep developing as a side project. <br> <br>
+
 Tjejbaciller WordPress Theme, Copyright 2024 Henrietta Jeansson Alalehto
-</ul>
+<br>
+<br>
+
 
 Tjejbaciller theme bundles the following third-party resources:
 
