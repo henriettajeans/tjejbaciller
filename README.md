@@ -1,26 +1,45 @@
 Tjejbaciller Theme <br>
 Contributors: Henrietta Jeansson<br>
-Requires at least: WordPress 4.4<br>
-Tested up to: WordPress 4.7<br>
-Requires PHP: 5.6<br>
+Tested up to: WordPress 6.5.2<br>
 
 
 This is a website that I will use as a sellers shop, a portfolio for my art and possibly some web development. <br>
 
-<h1>Description</h1><br>
+<h1>Set up project</h1><br>
 
-A few notes about the sections above:
+<h3>Two different ways of usage</h3>
 
-"Contributors" is a comma separated list of wp.orgusernames
-"Stable tag" is not needed for themes
-"Tags" is not needed since these are parsed from the style.css file
-"Requires at least" is the lowest version that the plugin will work on
-"Tested up to" is the highest version that you've successfully used to test the theme. Note that it might work on higher versions... this is just the highest one you've verified.
-Frequently Asked Questions
-Is this project fully done?
+<h4>The whole project:</h4>
+<ul>
+  <li>
+  Clone this repository and add it to your Wordpress folder in htdocs.
+</li>
+<li>
+  Delete the folder wp-content, and rename the cloned tjejbaciller folder to <i>wp-content</i>.
+</li>
+<li>
+  Go to your wordpress admin dashboard and see the functions that come with plugins and theme!
+</li>
+
+<h4>The Tjejbaciller Theme:</h4>
+<ul>
+  <li>
+  Clone this repository and copy the Tjejbaciller theme in wp-content/themes/Tjejbaciller theme.
+</li>
+<li>
+  Paste the theme folder into your other project in the folder <i>themes</i> </i>.
+</li>
+<li>
+  Go to your wordpress admin dashboard and activate the Tjejbaciller theme in Appearance/Themes.
+</li>
+
+
+<h3>Frequently Asked Questions</h3>
+<h4>Is this project fully done?</h4>
 No; this is the first finished draft of my website Tjejbaciller, and what I've spent my master thesis creating. Although it isn't done, that was the plan. I wanted to create something - not to be done, but something I will actually use and also will be able to keep developing as a side project.
 Copyright
-Twenty Seventeen WordPress Theme, Copyright 2016 WordPress.org Twenty Seventeen is distributed under the terms of the GNU GPL
+Tjejbaciller WordPress Theme, Copyright 2024 Henrietta Jeansson Alalehto
+</ul>
 
 Tjejbaciller theme bundles the following third-party resources:
 
