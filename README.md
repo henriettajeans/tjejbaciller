@@ -20,6 +20,7 @@ This is a website that I will use as a sellers shop, a portfolio for my art and 
 <li>
   Go to your wordpress admin dashboard and see the functions that come with plugins and theme!
 </li>
+</ul>
 
 <h4>The Tjejbaciller Theme:</h4>
 <ul>
@@ -32,6 +33,7 @@ This is a website that I will use as a sellers shop, a portfolio for my art and 
 <li>
   Go to your wordpress admin dashboard and activate the Tjejbaciller theme in Appearance/Themes.
 </li>
+</ul>
 
 
 <h3>Frequently Asked Questions</h3>
