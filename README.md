@@ -45,8 +45,10 @@ Tjejbaciller WordPress Theme, Copyright 2024 Henrietta Jeansson Alalehto
 
 Tjejbaciller theme bundles the following third-party resources:
 
-WP-SASS plugin
-ContactForm7 plugin
+WP-SASS plugin. Source: https://wordpress.org/plugins/wp-scss/
+<br>
+ContactForm7 plugin. Source: https://wordpress.org/plugins/contact-form-7/
+<br>
 Font Awesome icons, Copyright Dave Gandy License: SIL Open Font License, version 1.1. Source: http://fontawesome.io/
 
 Changelog
